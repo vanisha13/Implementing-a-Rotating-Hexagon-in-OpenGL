@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{0eb02aa8-49eb-48fa-a1ed-e6f23584d7dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{ae911204-4141-4e52-a247-0d2e253cd73c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\glad">
+      <UniqueIdentifier>{b2bfd4d1-70d0-453d-8b50-247502bcf45a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libs">
+      <UniqueIdentifier>{44aee24c-8686-4294-878d-987b4501f288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{47d05362-d4bf-46e2-80ae-a1b4818f8c9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asset">
+      <UniqueIdentifier>{ad26d9db-ca38-430b-8822-7108c500599c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderLoader.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Hexagon.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadSetup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Libraries\stb-master\deprecated\stb_image.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\..\..\..\Libraries\src\glad.c">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="cmakelist.txt" />
+    <Text Include="..\Shader\vertex_shader.vert.txt">
+      <Filter>Shaders</Filter>
+    </Text>
+    <Text Include="..\Shader\Hexagon Shader Files.txt">
+      <Filter>Shaders</Filter>
+    </Text>
+    <Text Include="..\Makefile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\glad\include\glad\glad.h">
+      <Filter>Header Files\include\glad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\glad\include\KHR\khrplatform.h">
+      <Filter>Header Files\include\glad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\glfw\glfw-3.3.8\include\GLFW\glfw3.h">
+      <Filter>libs</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderLoader.h">
+      <Filter>Header Files\include\glad</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Hexagon.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\..\Libraries\stb-master\stb_image.h">
+      <Filter>Header Files\include\glad</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadSetup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\..\Libraries\glfw-3.4.bin.WIN64\lib-vc2022\glfw3.lib">
+      <Filter>libs</Filter>
+    </Library>
+    <Library Include="..\..\..\..\..\..\Libraries\glew-2.2.0\lib\Release\x64\glew32.lib">
+      <Filter>libs</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Helper.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\fragment_shader.frag">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Texture.png">
+      <Filter>Asset</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

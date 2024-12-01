@@ -1,0 +1,13 @@
+all: my_program
+
+my_program: main.o shader.o
+    g++ -o my_program main.o shader.o -lGL -lGLEW -lglfw
+
+main.o: main.cpp
+    g++ -c main.cpp
+
+shader.o: Shader.cpp Shader.h
+    g++ -c Shader.cpp
+
+clean:
+    rm -f *.o my_program

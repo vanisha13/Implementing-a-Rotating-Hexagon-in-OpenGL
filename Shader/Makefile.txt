@@ -1,0 +1,28 @@
+# Makefile for building the hexagon project
+
+# Compiler and flags
+CXX = g++
+CXXFLAGS = -std=c++17 -Wall
+
+# Libraries
+LIBS = -lGL -lglfw -lGLEW
+
+# Source files and executable
+SOURCES = main.cpp
+OBJECTS = $(SOURCES:.cpp=.o)
+EXECUTABLE = hexagon
+
+# Default target
+all: $(EXECUTABLE)
+
+# Build the executable
+$(EXECUTABLE): $(OBJECTS)
+	$(CXX) $(CXXFLAGS) -o $@ $(OBJECTS) $(LIBS)
+
+# Build object files
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+# Clean up
+clean:
+	rm -f $(EXECUTABLE) $(OBJECTS)
